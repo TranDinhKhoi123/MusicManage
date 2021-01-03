@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Mangement</title>
+	<style type="text/css">
+		body {
+			font-family: "Arial";
+			font-size: 14px;
+			color: #505050;
+		    margin: 0px;
+		}
+		.header {
+			height: 60px;
+			margin: 0px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
+		}
+		.menu {
+			float: right;
+			padding-right: 20px;
+			font-size: 13px;
+		}
+		.logo img{
+			float: left;
+			display: block;
+			padding: 10px 10px 0px 20px;
+		}
+		.logo p{
+			float: left;
+			font-size: 40;
+			font-weight: bold;
+			display: block;
+			padding: 5px 5px;
+		}
+		.logo a {
+			text-decoration: none;
+			color: #000000;
+		}
+		.menu a {
+			float: left;
+			color: #505050;
+			text-align: center;
+			padding: 10px 12px;
+			text-decoration: none;
+		  
+		}
+		.menu a:hover {
+			background-color: #dddddd;
+			color: #505050;
+			text-decoration: none;
+		}
+		.table th, td {
+			padding: 10px;
+			text-align: left;
+		}
+		.table {
+			padding: 20px 50px 20px 50px;
+		}
+		.table table {
+			width: 100%;
+		}
+		.table button {
+			width: 40px;
+			height: 40px;
+			border: none;
+			border-radius: 4px;
+		}
+		.newMusic {
+			background-color: #00aa00;
+		}
+		.newMusic:hover {
+			background-color: #00dd00;
+		}
+		.editMusic {
+			background-color: #aaaa00;
+		}
+		.editMusic:hover {
+			background-color: #dddd00;
+		}
+		.deleteMusic {
+			background-color: #aa0000;
+		}
+		.deleteMusic:hover {
+			background-color: #dd0000;
+		}
+		.chuTo {
+			padding-left: 50px;
+			font-size: 20px;
+		}
+    </style>
+</head>
+<body>
+	<div class="header">
+		<div class = "logo">
+			<a href="index.html">
+				<img src="logoMusic.png" alt="">
+				<p>Music Mangement</p>
+			</a>
+		</div>
+		<div class = "menu">
+			<a href="index.html">Home</a>
+			<a href="gerne.html">Genre</a>
+			<a href="musican.html">Musican</a>
+			<a href="singer.html">Singer</a>
+		</div>
+	</div>
+	<div class="chuTo">
+		<p>Home</p>
+	</div>
+	<div class="table">
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Release time</th>
+				<th>Genre</th>
+				<th>Musican</th>
+				<th>Singer</th>
+				<th>
+					<button class="newMusic"><img src=""></button>
+				</th>
+			</tr>
+			<tr>
+				<td>Một triệu năm</td>
+				<td>2020-01-01</td>
+				<td>Trữ tình</td>
+				<td>Tú</td>
+				<td>Chipu</td>
+				<td>
+					<button class="editMusic"><img src=""></button>
+					<button class="deleteMusic"><img src=""></button>
+				</td>
+			</tr>
+			<tr>
+				<td>Một triệu năm</td>
+				<td>2020-01-01</td>
+				<td>Trữ tình</td>
+				<td>Tú</td>
+				<td>Chipu</td>
+				<td>
+					<button class="editMusic"><img src=""></button>
+					<button class="deleteMusic"><img src=""></button>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
